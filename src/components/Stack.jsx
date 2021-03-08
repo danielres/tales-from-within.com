@@ -19,6 +19,10 @@ export function Stack({ children, className = "", spacing = "md" }) {
         .stack-lg :global(> * + *) {
           margin-top: 2rem;
         }
+
+        .stack-xl :global(> * + *) {
+          margin-top: 2.5rem;
+        }
       `}</style>
     </>
   );
