@@ -16,14 +16,6 @@ export default function Home() {
           Get started by editing <code>pages/index.js</code>
         </p>
 
-        <nav>
-          <ul>
-            <li>
-              <Link href="/about">About</Link>
-            </li>
-          </ul>
-        </nav>
-
         <div>
           <a href="https://nextjs.org/docs">
             <h3>Documentation &rarr;</h3>
