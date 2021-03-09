@@ -4,10 +4,9 @@
 export function Stars() {
   return (
     <div className="fixed">
-      <div id="title"></div>
-      <div id="stars"></div>
-      <div id="stars2"></div>
-      <div id="stars3"></div>
+      <div id="stars" className="opacity-60"></div>
+      <div id="stars2" className="opacity-40"></div>
+      <div id="stars3" className="opacity-40"></div>
 
       <style jsx>
         {`
@@ -254,7 +253,7 @@ export function Stars() {
           #stars:after {
             content: " ";
             position: absolute;
-            top: 2000px;
+            top: 400px;
             width: 1px;
             height: 1px;
             background: transparent;
@@ -570,7 +569,7 @@ export function Stars() {
           #stars2:after {
             content: " ";
             position: absolute;
-            top: 2000px;
+            top: 400px;
             width: 2px;
             height: 2px;
             background: transparent;
@@ -686,7 +685,7 @@ export function Stars() {
           #stars3:after {
             content: " ";
             position: fixed;
-            top: 2000px;
+            top: 400px;
             width: 3px;
             height: 3px;
             background: transparent;
@@ -731,7 +730,7 @@ export function Stars() {
               transform: translateX(0px) translateY(0px);
             }
             to {
-              transform: translateX(200px) translateY(-400px);
+              transform: translateX(400px) translateY(-400px);
             }
           }
         `}
