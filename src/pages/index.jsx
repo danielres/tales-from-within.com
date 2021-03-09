@@ -89,6 +89,16 @@ function SCPlaylist() {
     ></iframe>
   );
 }
+
+function SCTrack({ id }) {
+  return (
+    <iframe
+      width="100%"
+      height="20"
+      scrolling="no"
+      frameborder="no"
+      allow="autoplay"
+      src={`https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/${id}&color=%235d5c62&inverse=true&auto_play=false&show_user=false`}
     ></iframe>
   );
 }
