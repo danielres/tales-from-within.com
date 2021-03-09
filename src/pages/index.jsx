@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { Layout } from "../components/Layout";
 import { Card } from "../components/ui/Card";
+import { H2 } from "../components/ui/H2";
 import { ProfilePic } from "../components/ui/ProfilePic";
 import { Ribbon } from "../components/ui/Ribbon";
 import { SCTrack } from "../components/ui/Soundcloud/SCTrack";
@@ -36,6 +37,8 @@ export default function Home() {
 
         <main>
           <Stack spacing="xl">
+            <H2>Latest tracks</H2>
+
             <Stack spacing="xs">
               {tracks.map((slug) => (
                 <Card>
