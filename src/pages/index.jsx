@@ -30,12 +30,14 @@ export default function Home() {
 
         <main>
           <Stack spacing="xl">
-            <Card>
-              <Stack spacing="sm">
+            <Stack spacing="xs">
+              <Card>
                 <SCTrack id={912679432} />
+              </Card>
+              <Card>
                 <SCTrack id={869495029} />
-              </Stack>
-            </Card>
+              </Card>
+            </Stack>
 
             <Card>
               <Stack spacing="sm">
@@ -51,7 +53,7 @@ export default function Home() {
                   </div>
                 </h2>
 
-                <SCPlaylist />
+                {/* <SCPlaylist /> */}
               </Stack>
             </Card>
 
