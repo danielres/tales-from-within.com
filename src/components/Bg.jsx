@@ -1,6 +1,6 @@
-import { BgFixed } from "./BgFixed";
-import { Spiral } from "./Spiral";
-import { Stars } from "./Stars";
+import { BgFixed } from "./Bg/BgFixed";
+import { Spiral } from "./Bg/Spiral";
+import { Stars } from "./Bg/Stars";
 
 export function Bg() {
   return (

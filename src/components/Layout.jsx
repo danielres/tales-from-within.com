@@ -1,4 +1,4 @@
-import { Stack } from "./Stack";
+import { Stack } from "./ui/Stack";
 
 export function Layout({ children }) {
   return (

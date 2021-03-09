@@ -1,6 +1,6 @@
 import Head from "next/head";
 import { Layout } from "../components/Layout";
-import { Stack } from "../components/Stack";
+import { Stack } from "../components/ui/Stack";
 
 const tracks = ["reefs", "dreamstate"];
 
