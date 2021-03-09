@@ -6,7 +6,20 @@ import { Ribbon } from "../components/ui/Ribbon";
 import { SCTrack } from "../components/ui/Soundcloud/SCTrack";
 import { Stack } from "../components/ui/Stack";
 
-const tracks = ["reefs", "dreamstate"];
+const tracks = [
+  "dreamstate",
+  "reefs",
+  "oceanfloor",
+  "impossible-suns",
+  "another-dream",
+  "a-brief-history-of-time",
+  "strange-loop",
+  "final-frontier",
+  "slingshot",
+  "star-signals",
+  "trails-of-fire",
+  "octopus-dream",
+];
 
 export default function Home() {
   return (
