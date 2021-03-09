@@ -6,7 +6,7 @@ export function Stars() {
     <div className="fixed">
       <div id="stars" className="opacity-60"></div>
       <div id="stars2" className="opacity-40"></div>
-      <div id="stars3" className="opacity-40"></div>
+      <div id="stars3" className="opacity-50"></div>
 
       <style jsx>
         {`
