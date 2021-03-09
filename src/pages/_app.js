@@ -1,17 +1,11 @@
-import { BgFixed } from "../components/BgFixed";
-// import { Flicker } from "../components/Flicker";
-import { Spiral } from "../components/Spiral";
-import { Stars } from "../components/Stars";
+import { Bg } from "../components/Bg";
 import "../styles/globals.css";
 
 function MyApp({ Component, pageProps }) {
   return (
     <>
       <div className="relative z-0">
-        <BgFixed />
-        <Spiral />
-        <Stars />
-        {/* <Flicker /> */}
+        <Bg />
       </div>
 
       <div className="relative z-10">
