@@ -5,20 +5,23 @@ import { Stack } from "../components/Stack";
 export default function Home() {
   return (
     <>
-      <PageTitle>
-        <div
-          className="opacity-80 text-white"
-          style={{ textShadow: "0 0 16px #FFFFFF" }}
-        >
-          Tales from Within
-        </div>
-        <div
-          className="text-white text-lg "
-          style={{ textShadow: "0 0 16px #c722f5", color: "#837af2" }}
-        >
-          Inner &amp; outer space travels
-        </div>
-      </PageTitle>
+      <div className="xl:mt-16 mb-16">
+        <PageTitle>
+          <div
+            className="opacity-80 text-white"
+            style={{ textShadow: "0 0 16px #FFFFFF" }}
+          >
+            Tales from Within
+          </div>
+          <div
+            className="text-white text-lg "
+            style={{ textShadow: "0 0 16px #c722f5", color: "#837af2" }}
+          >
+            Inner &amp; outer space travels
+          </div>
+        </PageTitle>
+      </div>
+
       <Layout>
         <Head>
           <title>Tales from Within music</title>
@@ -44,14 +47,8 @@ export default function Home() {
                 <SCPlaylist />
               </Stack>
             </Card>
-            <div
-              className="relative z-50 rounded-full opacity-90"
-              style={{
-                width: 120,
-                height: 120,
-                left: "calc(50% - 60px)",
-              }}
-            >
+
+            <div className="">
               <ProfilePic />
             </div>
           </Stack>
@@ -74,7 +71,7 @@ function Card({ children }) {
 
 function PageTitle({ children }) {
   return (
-    <h1 className="text-4xl text-center my-16 bg-black bg-opacity-30 rounded py-16 z-50 relative">
+    <h1 className="text-4xl text-center bg-black bg-opacity-30 rounded py-16 z-50 relative">
       {children}
     </h1>
   );
@@ -94,5 +91,12 @@ function SCPlaylist() {
 }
 
 function ProfilePic() {
-  return <img src="/profile1.jpg" className="rounded-full " />;
+  return (
+    <img
+      src="/profile1.jpg"
+      className="rounded-full"
+      width={120}
+      height={120}
+    />
+  );
 }
