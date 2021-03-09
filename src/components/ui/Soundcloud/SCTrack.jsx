@@ -2,7 +2,7 @@ export function SCTrack({
   id,
   track = "reefs",
   artist = "tales-from-within",
-  color = "5d5c62",
+  color = "7777ee",
   inverse = true,
   autoPlay = false,
   showUser = false,
