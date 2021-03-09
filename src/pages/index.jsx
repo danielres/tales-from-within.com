@@ -32,6 +32,13 @@ export default function Home() {
           <Stack spacing="xl">
             <Card>
               <Stack spacing="sm">
+                <SCTrack id={912679432} />
+                <SCTrack id={869495029} />
+              </Stack>
+            </Card>
+
+            <Card>
+              <Stack spacing="sm">
                 <h2 className="text-gray-800">
                   <div className="text-lg opacity-75">
                     <span
