@@ -44,22 +44,6 @@ export default function Home() {
               ))}
             </Stack>
 
-            <Card>
-              <Stack spacing="sm">
-                <h2 className="text-gray-800">
-                  <div className="text-lg opacity-75">
-                    <span
-                      style={{
-                        textShadow: "0 0 5px rgba(200, 100, 200, 1)",
-                      }}
-                    >
-                      All tracks
-                    </span>
-                  </div>
-                </h2>
-              </Stack>
-            </Card>
-
             <div className="">
               <ProfilePic src="/profile1.jpg" />
             </div>
