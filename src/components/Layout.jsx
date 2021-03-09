@@ -1,13 +1,18 @@
 import { Stack } from "./Stack";
+import { Stars } from "./Stars";
 
 export function Layout({ children }) {
   return (
-    <div className="container mx-auto max-w-3xl text-center">
-      <Stack spacing="lg">
-        {children}
+    <>
+      <Stars />
 
-        <footer>[FOOTER]</footer>
-      </Stack>
-    </div>
+      <div className="container mx-auto max-w-3xl text-center">
+        <Stack spacing="lg">
+          {children}
+
+          <footer>[FOOTER]</footer>
+        </Stack>
+      </div>
+    </>
   );
 }
