@@ -68,8 +68,8 @@ export default function Home() {
 function Card({ children }) {
   return (
     <div
-      className="bg-white bg-opacity-80 p-6 rounded z-50 relative"
-      style={{ backgroundColor: "#e7dfffb5" }}
+      className="bg-black bg-opacity-30 p-6 rounded-xl z-50 relative"
+      // style={{ backgroundColor: "#e7dfffb5" }}
     >
       {children}
     </div>
