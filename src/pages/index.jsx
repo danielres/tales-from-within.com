@@ -24,14 +24,13 @@ export default function Home() {
             <H2 align="left">Latest tracks</H2>
 
             <Stack spacing="2xs">
-              {data.tracks.latest.map((slug) => (
-                <Card compact>
+              {data.tracks.latest.map((slug, i) => (
+                <Card compact key={`${slug}-${i}`}>
                   <Track track={slug} />
                 </Card>
               ))}
             </Stack>
           </Stack>
-          {/* /Side col */}
 
           {/* Main col */}
           <div className="col-span-2 md:order-first mt-12 md:mt-0">
