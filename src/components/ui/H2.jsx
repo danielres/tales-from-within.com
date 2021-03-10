@@ -7,10 +7,10 @@ export function H2({ children, align = "center" }) {
           : align === "right"
           ? "text-right"
           : "text-center"
-      } px-4`}
+      } px-6`}
       style={{
         textShadow:
-          "rgb(193, 238, 255) 0px 0px 8px, rgb(193, 238, 255) 0px 0px 16px, rgb(240, 238, 255) 0px 0px 24px ",
+          "rgb(193, 238, 255) 0px 0px 8px,  rgb(240, 238, 255) 0px 0px 24px ",
         fontFamily: "'Courier Prime'",
       }}
     >
