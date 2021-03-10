@@ -2,7 +2,7 @@ export function SCTrack({
   id,
   track = "reefs",
   artist = "tales-from-within",
-  color = "7777ee",
+  color = "7777aa",
   inverse = true,
   autoPlay = false,
   showUser = false,
@@ -10,10 +10,13 @@ export function SCTrack({
 }) {
   const url = `https://soundcloud.com/${artist}/${track}`;
 
+  const sizes = [19.5, 130];
+
   return (
     <iframe
+      className="opacity-80 hover:opacity-100 transition transition-opacity"
       width="100%"
-      height={size === 1 ? 20 : size === 2 ? 130 : 20}
+      height={sizes[size - 1]}
       scrolling="no"
       frameborder="no"
       allow="autoplay"
