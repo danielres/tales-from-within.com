@@ -13,8 +13,10 @@ export const InlineIcon = ({ children, size = 20, debug = false }) => {
             {children}
           </div>
         </div>
+
         <div style={{ width: size }}>&nbsp;</div>
       </span>
+
       <style jsx>{`
         .centered {
           position: absolute;

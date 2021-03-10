@@ -1,77 +1,65 @@
 import Head from "next/head";
+import { About } from "../components/contents/About";
+import { Social } from "../components/contents/Social";
 import { Layout } from "../components/Layout";
 import { Card } from "../components/ui/Card";
 import { H2 } from "../components/ui/H2";
-import { ProfilePic } from "../components/ui/ProfilePic";
-import { Ribbon } from "../components/ui/Ribbon";
-import { SCTrack } from "../components/ui/Soundcloud/SCTrack";
+import { Prose } from "../components/ui/Prose";
+import { Track } from "../components/ui/Soundcloud/Track";
 import { Stack } from "../components/ui/Stack";
-
-const tracks = [
-  "dreamstate",
-  "reefs",
-  "oceanfloor",
-  "impossible-suns",
-  "another-dream",
-  "a-brief-history-of-time",
-  "strange-loop",
-  "final-frontier",
-  "slingshot",
-  "star-signals",
-  "trails-of-fire",
-  "octopus-dream",
-];
+import * as data from "../data";
 
 export default function Home() {
   return (
-    <>
-      <div className="xl:mt-16 mb-16">
-        <PageTitle />
-      </div>
+    <Layout>
+      <Head>
+        <title>Tales from Within music</title>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
 
-      <Layout>
-        <Head>
-          <title>Tales from Within music</title>
-          <link rel="icon" href="/favicon.ico" />
-        </Head>
+      <main>
+        <div className="grid grid-cols-1 md:grid-cols-3">
+          {/* Side col */}
+          <Stack spacing="xs">
+            <H2 align="left">Latest tracks</H2>
 
-        <main>
-          <Stack spacing="xl">
-            <H2>Latest tracks</H2>
-
-            <Stack spacing="xs">
-              {tracks.map((slug) => (
-                <Card>
-                  <SCTrack track={slug} />
+            <Stack spacing="2xs">
+              {data.tracks.latest.map((slug) => (
+                <Card compact>
+                  <Track track={slug} />
                 </Card>
               ))}
             </Stack>
-
-            <div className="">
-              <ProfilePic src="/profile1.jpg" />
-            </div>
           </Stack>
-        </main>
-      </Layout>
-    </>
-  );
-}
+          {/* /Side col */}
 
-function PageTitle() {
-  return (
-    <Ribbon>
-      <div
-        className="opacity-80 text-white"
-        style={{ textShadow: "0 0 16px #FFFFFF" }}
-      >
-        Tales from Within
-      </div>
-      <div
-        className="text-white text-lg "
-        style={{ textShadow: "0 0 16px #c722f5", color: "#837af2" }}
-      >
-        Inner &amp; outer space travels
-      </div>
-    </Ribbon>
+          {/* Main col */}
+          <div className="col-span-2 md:order-first mt-12 md:mt-0">
+            <div className="md:pr-3">
+              {/* About */}
+              <Stack spacing="xs">
+                <H2 align="left">About</H2>
+
+                <Card>
+                  <Prose>
+                    <About />
+                  </Prose>
+                </Card>
+              </Stack>
+              {/* /About */}
+
+              {/* Social */}
+              <Card transparent>
+                <Prose>
+                  <Social />
+                </Prose>
+              </Card>
+              {/* /Social */}
+            </div>
+          </div>
+          {/* /Main col */}
+        </div>
+      </main>
+    </Layout>
   );
 }

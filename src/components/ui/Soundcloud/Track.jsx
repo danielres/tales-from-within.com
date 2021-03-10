@@ -1,4 +1,4 @@
-export function SCTrack({
+export function Track({
   id,
   track = "reefs",
   artist = "tales-from-within",

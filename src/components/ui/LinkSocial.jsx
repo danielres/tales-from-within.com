@@ -1,4 +1,4 @@
-import { InlineIcon } from "../icons/InlineIcon";
+import { InlineIcon } from "./InlineIcon";
 
 export function LinkSocial({ Icon, href, children }) {
   return (
