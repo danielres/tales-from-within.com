@@ -9,6 +9,7 @@ export function Social() {
         <LinkSocial
           href="https://soundcloud.com/tales-from-within"
           Icon={Soundcloud}
+          size={30}
         >
           Soundcloud
         </LinkSocial>
@@ -18,6 +19,7 @@ export function Social() {
         <LinkSocial
           href="https://soundcloud.com/tales-from-within"
           Icon={Facebook}
+          size={18}
         >
           Facebook
         </LinkSocial>
