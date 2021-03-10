@@ -62,7 +62,8 @@ export function About() {
         <ProseLink href="https://www.blipinteractive.co.uk/nanostudio2/">
           Nanostudio2
         </ProseLink>
-        , using mostly self-created instruments and sound textures.
+        , using sound textures and electronic instruments mostly created by
+        himself.
       </p>
     </>
   );
