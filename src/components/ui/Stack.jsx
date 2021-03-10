@@ -4,6 +4,10 @@ export function Stack({ children, className = "", spacing = "md" }) {
       <div className={`stack-${spacing} ${className}`}>{children}</div>
 
       <style jsx>{`
+        .stack-2xs :global(> * + *) {
+          margin-top: 0.3rem;
+        }
+
         .stack-xs :global(> * + *) {
           margin-top: 0.5rem;
         }
